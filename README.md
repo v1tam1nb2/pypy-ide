@@ -52,6 +52,16 @@ docker push yuimaijds/pypy-ide:0.0.1
       - '8080:80'
 ```
 
+## データの永続化
+
+コンテナ内の`/workspace`に保存されるデータは永続化されます。
+
+```yaml
+    volumes:
+      #./workspaceフォルダをコンテナの/workspaceにマウントする
+      - ./workspace:/workspace
+```
+
 ## コンテナの起動
 
 ```docker-compose.yaml```を配置しているディレクトリで以下を実行してください。
