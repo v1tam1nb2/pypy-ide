@@ -14,6 +14,6 @@ services:
     ports:
       - '8080:80'
     # ディレクトリのマウント設定
-    # volumes:
+    volumes:
       #./workspaceフォルダをコンテナの/workspaceにマウントする
-      # - ./workspace:/workspace
+      - ./workspace:/workspace
