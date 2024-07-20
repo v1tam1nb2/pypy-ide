@@ -1,0 +1,24 @@
+###### Requirements without Version Specifiers ######`
+
+plotly
+matplotlib
+clickhouse-driver
+numpy
+numpydoc
+pandas
+openpyxl
+toml
+PyYAML
+pycryptodome
+cx_Oracle
+aiofiles
+
+# Use for fastapi
+fastapi
+uvicorn[standard]
+gunicorn
+aiofiles
+ujson
+python-multipart
+
+###### Requirements with Version Specifiers ######`

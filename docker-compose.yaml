@@ -1,0 +1,19 @@
+# 以下サービス内容を定義
+services:
+  # コンテナのサービス名
+  pypy-ide:
+    # イメージ名
+    image: yuimaijds/pypy-ide:0.0.1
+    # コンテナ名
+    container_name: pypy-ide
+    # コンテナのホスト名
+    hostname: pypy-ide
+    # dockerが再起動されてもコンテナが再起動するための設定
+    restart: always
+    # ポートフォワードの設定
+    ports:
+      - '18080:80'
+    # ディレクトリのマウント設定
+    # volumes:
+      #./workspaceフォルダをコンテナの/workspaceにマウントする
+      # - ./workspace:/workspace

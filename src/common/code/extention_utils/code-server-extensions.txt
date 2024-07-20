@@ -1,0 +1,26 @@
+##### Use extension id #####
+ms-ceintl.vscode-language-pack-ja@1.89.0
+mechatroner.rainbow-csv
+ms-python.python
+# ms-python.flake8
+# ms-python.black-formatter
+charliermarsh.ruff
+PKief.material-icon-theme
+mtxr.sqltools
+ultram4rine.sqltools-clickhouse-driver
+bungcip.better-toml
+yzhang.markdown-all-in-one
+janisdd.vscode-edit-csv
+bierner.markdown-mermaid
+hediet.vscode-drawio
+
+# SVN
+johnstoncode.svn-scm
+
+# git
+mhutchie.git-graph
+donjayamanne.githistory
+
+##### Use url #####
+
+##### Use vsix file #####

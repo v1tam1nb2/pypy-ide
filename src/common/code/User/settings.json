@@ -1,0 +1,90 @@
+{
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "workbench.colorTheme": "Default Dark+",
+    "terminal.integrated.allowChords": false,
+    "workbench.enableExperiments": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "update.mode": "none",
+    "update.showReleaseNotes": false,
+    "extensions.autoCheckUpdates": false,
+    "extensions.autoUpdate": false,
+    "npm.fetchOnlinePackageInfo": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.tree.expandMode": "doubleClick",
+    "workbench.list.openMode": "doubleClick",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editorAssociations": [
+      {
+        "viewType": "jupyter.notebook.ipynb",
+        "filenamePattern": "*.ipynb"
+      },
+      {
+        "viewType": "jupyter-notebook",
+        "filenamePattern": "*.ipynb"
+      }
+    ],
+    "explorer.autoReveal": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "python.pythonPath": "/usr/local/bin/python",
+    "python.recommendedInterpreterPath": "/usr/local/bin/python",
+    "python.defaultInterpreterPath": "/usr/local/bin/python",
+    "files.watcherExclude": {
+      "/root/.vscode-server/": true,
+      "/jupyter/notebooks/.ipynb_checkpoints/": true,
+      "/jupyter/notebooks/airflow/logs/": true,
+      "/jupyter/notebooks/share/": true,
+      "/jupyter/notebooks/sqlpad/": true,
+      "/share/": true,
+    },
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.localEchoLatencyThreshold": -1,
+    "ruff.lint.args": [], // ruff checkに渡す追加のコマンドライン引数。設定ファイル(ruff.tomlなど)より優先される
+    "ruff.path": [], // ruffの実行パス
+    "ruff.interpreter": [], // pythonの実行パス
+    "ruff.importStrategy": "fromEnvironment", // "fromEnvironment": 環境にruffがインストールされている場合は、そちらを使う。 "useBundled": Extension付属のruffを使う。
+    "ruff.lint.run": "onType", // "onType": 入力度にruffを実行。 "onSave":保存時にruffを実行。
+    "ruff.enable": true, // ruffを有効にするか否か。
+    "ruff.organizeImports": true, // source.organizeImports を実行するのにruffを使用するか否か。
+    "ruff.fixAll": true, // source.fixAll を実行するのにruffを使用するか否か。
+    "ruff.codeAction.fixViolation": { // Quick Fix を表示するか否か。
+      "enable": true
+    },
+    "ruff.codeAction.disableRuleComment": { // # nopa でQuick Fixを無視するか否か。
+      "enable": true
+    },
+    "ruff.showNotifications": "always", // ruffの通知を表示するか否か。 "off", "onError", "onWarning", "always"
+    "ruff.format.args": [], // ruff formatに渡す追加のコマンドライン引数。 設定ファイル(ruff.tomlなど)より優先される
+    "ruff.trace.server": "off", // "off", "message", "verbose",
+    // global 設定
+    "editor.formatOnSave": true, // 保存時にフォーマットするか。
+    "editor.formatOnPaste": false, // 貼り付け時にフォーマットするか。
+    "editor.formatOnType": false, // 入力時にフォーマットするか。
+    "editor.formatOnSaveMode": "file", // "file": 常にファイル全体をフォーマット、 "modifications": 修正された所のみフォーマット。SourceControlが必要。 "modificationsIfAvailable": 修正された所のみフォーマットを試みる。SourceControlが無い場合、ファイル全体をフォーマット。
+    // "editor.defaultFormatter": "charliermarsh.ruff" // デフォルトのformatterにruffを指定。
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true, // (デフォルトに設定されているもので)fixAllを実行。
+      // "source.fixAll.ruff": true, // ruffのfixAllを明示的に使用。
+      "source.organizeImports": true, // (デフォルトに設定されているもので)organizeImportsを実行。
+      // "source.organizeImports.ruff": true //ruffのorganizeImportsを明示的に使用。
+    },
+    // python file
+    "[python]": {
+      "editor.formatOnSave": true,
+      "editor.formatOnPaste": false,
+      "editor.formatOnType": false,
+      "editor.formatOnSaveMode": "file",
+      "editor.defaultFormatter": "charliermarsh.ruff", // 別のものを指定するとフォーマットは指定したものになる
+      "editor.codeActionsOnSave": { // 保存時に実行する
+        "source.fixAll": true, // (登録した)fixAllを実行。
+        // "source.fixAll.ruff": true, // ruffのfixAllを明示的に使用。
+        "source.organizeImports": true, // (登録した)organizeImportsを実行。
+        // "source.organizeImports.ruff": true //ruffのorganizeImportsを明示的に使用。
+      }
+    },
+    "svn.path": "/usr/bin/svn",
+    "java.home": "/usr/lib/jvm/java-8-openjdk-amd64",
+    "maven.executable.path": "/usr/bin/mvn", //mavenの実行ファイル
+    "maven.terminal.useJavaHome": true //mavenにもJavaのパスを見るように指示してあげる
+  }
